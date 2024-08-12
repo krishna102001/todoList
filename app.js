@@ -18,7 +18,7 @@ app.use(express.static("public"));
 mongoose.set("strictQuery", false);
 
 //connect mongodb
-await mongoose.connect("mongodb+srv://admin:admin@todo-db.qmry2i0.mongodb.net/?retryWrites=true&w=majority&appName=todo-db");
+await mongoose.connect("mongodb+srv://admin:password@todo-db.qmry2i0.mongodb.net/?retryWrites=true&w=majority&appName=todo-db");
 
 
 // defining the schema
