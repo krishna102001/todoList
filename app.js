@@ -18,7 +18,8 @@ app.use(express.static("public"));
 mongoose.set("strictQuery", false);
 
 //connect mongodb
-mongoose.connect("mongodb+srv://admin-krishna:Test123@cluster0.bugotr5.mongodb.net/todolist");
+mongoose.connect("mongodb+srv://admin:Test123@todo-db.qmry2i0.mongodb.net/?retryWrites=true&w=majority&appName=todo-db");
+
 
 // defining the schema
 const itemSchema = new mongoose.Schema({
