@@ -15,6 +15,8 @@ app.use(express.static("public"));
 // const items = ["Buy Food", "Cook Food", "Eat Food"];
 // const workItems = [];
 
+mongoose.set("strictQuery", false);
+
 //connect mongodb
 mongoose.connect("mongodb+srv://admin-krishna:Test123@cluster0.bugotr5.mongodb.net/todolist");
 
